@@ -1,10 +1,17 @@
-var express = require('express');
+var express = require('express'),
+  oembed = require('./lib/oembed');
 
 var app = express();
 
 
 app.get('/', function(req, res){
-  res.send('Hello World');
+  oembed.fromUrl(req.query.url, function(err, json){
+    if (err){
+      res.json(err);
+    } else {
+      res.json(json);
+    }
+  });
 });
 
 
