@@ -1,0 +1,22 @@
+{
+  "name": "omniembed",
+  "version": "0.0.0",
+  "description": "Central API for oEmbed data",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:afeld/omniembed.git"
+  },
+  "keywords": [
+    "oembed",
+    "api"
+  ],
+  "author": "Aidan Feldman",
+  "license": "MIT",
+  "dependencies": {
+    "express": "3.0.x"
+  }
+}
