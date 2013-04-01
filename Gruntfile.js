@@ -6,15 +6,13 @@ module.exports = function(grunt) {
     // Task configuration.
     simplemocha: {
       options: {
-        globals: ['should'],
         timeout: 3000,
         ignoreLeaks: false,
-        // grep: '*-test',
         ui: 'bdd',
         reporter: 'tap'
       },
 
-      all: { src: 'test/spec/*.js' }
+      all: { src: 'test/*.js' }
     },
     jshint: {
       options: {
@@ -39,7 +37,7 @@ module.exports = function(grunt) {
         src: 'Gruntfile.js'
       },
       lib_test: {
-        src: ['lib/**/*.js', 'test/spec/*.js']
+        src: ['lib/**/*.js', 'test/*.js']
       }
     },
     watch: {
