@@ -1,0 +1,16 @@
+{
+  "http://www.youtube.com/watch?v=3Yuqxl284cg": {
+    "height": 1080,
+    "provider_name": "YouTube",
+    "title": "M.I.A. - Bad Girls",
+    "author_name": "MIAVEVO",
+    "author_url": "http://www.youtube.com/user/MIAVEVO",
+    "width": 1920,
+    "thumbnail_height": 1080,
+    "provider_url": "http://www.youtube.com/",
+    "thumbnail_width": 1920,
+    "thumbnail_url": "http://i4.ytimg.com/vi/3Yuqxl284cg/maxresdefault.jpg?feature=og",
+    "version": "1.0",
+    "type": "video"
+  }
+}
