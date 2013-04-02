@@ -16,8 +16,9 @@ describe('Live tests', function(){
           assert(!u.isEmpty(result), "should not be empty");
 
           // check that example data is subset of the response
-          u.each(expected, function(val, key){
-            assert.strictEqual(result[key], val, key + "should match");
+          u.each(expected, function(expectedVal, key){
+            var actualVal = result[key];
+            assert.strictEqual(actualVal, expectedVal, key + " should match. Expected: " + expectedVal + ', actual: ' + actualVal);
           });
 
           request({

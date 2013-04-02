@@ -11,7 +11,8 @@
     "thumbnail_width": 1920,
     "thumbnail_url": "http://i4.ytimg.com/vi/3Yuqxl284cg/maxresdefault.jpg?feature=og",
     "version": "1.0",
-    "type": "video"
+    "type": "video",
+    "description": "Vote for video of the year here!  http://on.mtv.com/P7JsT6\n\n\n\nMusic video by M.I.A. performing Bad Girls. Buy now! http://www.smarturl.it/MIABadGirls © 2012 Interscope"
   },
   "http://www.youtube.com/watch?v=AU8ITJ3YG54": {
     "width": 480,
@@ -25,6 +26,7 @@
     "author_name": "Aidan Feldman",
     "thumbnail_url": "http://i2.ytimg.com/vi/AU8ITJ3YG54/hqdefault.jpg",
     "type": "video",
-    "thumbnail_width": 480
+    "thumbnail_width": 480,
+    "description": "Video by Aidan Feldman."
   }
 }
