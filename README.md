@@ -9,6 +9,8 @@ Single oEmbed endpoint for various services, sometimes enhancing the oEmbed endp
     - uses largest possible thumbnail URL/size
 * more to come, or [add more](https://github.com/Jux/omniembed/blob/master/CONTRIBUTING.md)!
 
+## Usage
+
 To request oEmbed data, do a request to
 
 http://omniembed.herokuapp.com/v1.json?url=URL
