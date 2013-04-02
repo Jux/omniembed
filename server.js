@@ -7,7 +7,10 @@ var app = express();
 app.get('/v1.json', function(req, res){
   oembed.fromUrl(req.query.url, function(err, json){
     if (err){
-      res.json(err);
+      res.json(404, {
+        status: 404,
+        message: err
+      });
     } else {
       res.json(json);
     }
