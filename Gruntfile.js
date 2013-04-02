@@ -4,16 +4,6 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     // Task configuration.
-    simplemocha: {
-      options: {
-        timeout: 3000,
-        ignoreLeaks: false,
-        ui: 'bdd',
-        reporter: 'tap'
-      },
-
-      all: { src: 'test/*.js' }
-    },
     jshint: {
       options: {
         curly: true,
@@ -40,6 +30,16 @@ module.exports = function(grunt) {
         src: ['lib/**/*.js', 'test/*.js']
       }
     },
+    'mocha-hack': {
+      options: {
+        timeout: 3000,
+        ignoreLeaks: false,
+        ui: 'bdd',
+        reporter: 'tap'
+      },
+
+      all: { src: 'test/*.js' }
+    },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
@@ -55,10 +55,9 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.loadNpmTasks('grunt-simple-mocha');
+  grunt.loadNpmTasks('grunt-mocha-hack');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'simplemocha']);
+  grunt.registerTask('default', ['jshint', 'mocha-hack']);
 
 };
