@@ -27,5 +27,8 @@
     "grunt-contrib-watch": "~0.3.1",
     "grunt-contrib-jshint": "~0.3.0",
     "grunt-mocha-hack": "~0.1.0"
+  },
+  "engines": {
+    "node": "~0.10.2"
   }
 }
