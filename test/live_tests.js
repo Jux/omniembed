@@ -10,11 +10,11 @@ describe('Live tests', function(){
     it("should succeed for " + url, function(done){
       oembed.fromUrl(url, function(err, result){
         if (!err){
-          assert(!u.isEmpty(result), 'should not be empty');
+          assert(!u.isEmpty(result), "should not be empty");
 
           // check that example data is subset of the response
           u.each(expected, function(val, key){
-            assert.strictEqual(result[key], val);
+            assert.strictEqual(result[key], val, key + "should match");
           });
         }
 
