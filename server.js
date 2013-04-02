@@ -3,6 +3,8 @@ var express = require('express'),
 
 var app = express();
 
+app.use(express.logger());
+app.use(express.compress());
 
 app.get('/v1.json', function(req, res){
   oembed.fromUrl(req.query.url, function(err, json){
