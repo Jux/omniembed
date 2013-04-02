@@ -12,5 +12,19 @@
     "thumbnail_url": "http://i4.ytimg.com/vi/3Yuqxl284cg/maxresdefault.jpg?feature=og",
     "version": "1.0",
     "type": "video"
+  },
+  "http://www.youtube.com/watch?v=AU8ITJ3YG54": {
+    "width": 480,
+    "version": "1.0",
+    "title": "Sorrow and Misery follow Her smiling",
+    "author_url": "http://www.youtube.com/user/alfgames",
+    "height": 360,
+    "thumbnail_height": 360,
+    "provider_name": "YouTube",
+    "provider_url": "http://www.youtube.com/",
+    "author_name": "Aidan Feldman",
+    "thumbnail_url": "http://i2.ytimg.com/vi/AU8ITJ3YG54/hqdefault.jpg",
+    "type": "video",
+    "thumbnail_width": 480
   }
 }
