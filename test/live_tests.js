@@ -21,6 +21,7 @@ describe('Live tests', function(){
             assert.strictEqual(actualVal, expectedVal, key + " should match. Expected: " + expectedVal + ', actual: ' + actualVal);
           });
 
+          // verify that thumbnail exists
           request({
             url: result.thumbnail_url,
             method: 'HEAD'
