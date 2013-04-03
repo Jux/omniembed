@@ -28,5 +28,21 @@
     "type": "video",
     "version": "1.0",
     "width": 480
+  },
+  "http://www.youtube.com/watch?v=fiR8fv1QwrQ": {
+    "author_name": "TheEllenShow",
+    "author_url": "http://www.youtube.com/user/TheEllenShow",
+    "description": "Celebrity chef Fabio Viviani got cooking with Ellen and whipped up these two delicious recipes! Watch it here, and then find more delicious vegan recipes like them, right here. http://www.ellentv.com/categories/going-vegan-with-ellen/",
+    "height": 720,
+    "html": "<iframe width=\"480\" height=\"270\" src=\"http://www.youtube.com/embed/fiR8fv1QwrQ?feature=oembed\" frameborder=\"0\" allowfullscreen></iframe>",
+    "provider_name": "YouTube",
+    "provider_url": "http://www.youtube.com/",
+    "thumbnail_height": 720,
+    "thumbnail_url": "http://i3.ytimg.com/vi/fiR8fv1QwrQ/mqdefault.jpg?feature=og",
+    "thumbnail_width": 1280,
+    "title": "Veggie Burgers with Fabio Viviani!",
+    "type": "video",
+    "version": "1.0",
+    "width": 1280
   }
 }
