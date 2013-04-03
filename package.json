@@ -12,7 +12,8 @@
   },
   "keywords": [
     "oembed",
-    "api"
+    "api",
+    "youtube"
   ],
   "author": "Aidan Feldman",
   "license": "MIT",
@@ -21,7 +22,7 @@
     "express": "~3.1.1",
     "request": "~2.16.6",
     "underscore": "~1.4.4",
-    "cors": "0.0.5"
+    "cors": "~0.0.5"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -30,7 +31,7 @@
     "grunt-mocha-hack": "~0.1.0",
     "sinon": "~1.6.0",
     "supertest": "~0.5.1",
-    "sinon-mocha": "0.0.3"
+    "sinon-mocha": "~0.0.3"
   },
   "engines": {
     "node": "~0.10.2"
