@@ -8,7 +8,7 @@ describe('Live tests', function(){
   var examples = JSON.parse(fs.readFileSync('test/examples.json'));
 
   u.each(examples, function(expected, url){
-    it("should succeed for " + url, function(done){
+    it('should succeed for "' + expected.title + '"', function(done){
       oembed.fromUrl(url, function(err, result){
         if (err){
           done(err);
@@ -21,11 +21,14 @@ describe('Live tests', function(){
             assert.strictEqual(actualVal, expectedVal, key + " should match. Expected: " + expectedVal + ', actual: ' + actualVal);
           });
 
-          // verify that thumbnail exists
+          // verify thumbnail size
           request({
-            url: result.thumbnail_url,
-            method: 'HEAD'
-          }, function(thumbErr){
+            url: 'http://magickly.jux.com/analyze/width?src=' + encodeURIComponent(result.thumbnail_url)
+          }, function(thumbErr, res, width){
+            if (!thumbErr){
+              assert.strictEqual(result.thumbnail_width, parseInt(width, 10));
+            }
+
             done(thumbErr);
           });
         }
