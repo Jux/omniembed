@@ -8,7 +8,8 @@ describe('Live tests', function(){
   var examples = JSON.parse(fs.readFileSync('test/examples.json'));
 
   u.each(examples, function(expected, url){
-    it('should succeed for "' + expected.title + '"', function(done){
+    var name = expected.title || url;
+    it('should succeed for "' + name + '"', function(done){
       oembed.fromUrl(url, function(err, result){
         if (err){
           done(err);

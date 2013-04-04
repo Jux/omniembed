@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     },
     'mocha-hack': {
       options: {
-        timeout: 3000,
+        timeout: 10000,
         ignoreLeaks: false,
         ui: 'bdd',
         reporter: 'tap'
